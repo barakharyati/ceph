@@ -34,7 +34,7 @@ on:
 jobs:
   redmine-upkeep:
     runs-on: ubuntu-latest
-    if: github.repository == 'ceph/ceph'
+    if: github.repository == 'ceph/ceph' || github.repository =='barakharyati/ceph'
     steps:
       - name: Checkout main branch for pull_request_target
         if: github.event_name == 'pull_request_target'
